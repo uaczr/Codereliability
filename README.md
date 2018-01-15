@@ -1,10 +1,11 @@
 # Codereliability
 Clang-Tidy as external Codeanalysis Tool in Eclipse-CDT Neon.3
 
-##Requirements
+## Requirements
+
 clang-tidy
 
-##Usage
+## Usage
 Copy jar file from Codereliability/deploy into your eclipse/Dropins folder.
 
 
