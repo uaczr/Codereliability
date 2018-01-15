@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="com.developerworks.cdt.checkers"
+         name="CinterErrorParsers"
+         point="org.eclipse.cdt.core.ErrorParser">
+      <errorparser
+            class="codereliability.ClangTidyErrorParser"
+            id="com.dw.cdt.checkers.ClangTidyErrorParser"
+            name="ClangTidyParser">
+            <context type="codan" />
+            </errorparser>
+   </extension>
+   <extension point="org.eclipse.cdt.codan.core.checkers">
+      <category id="codereliability.category" name="ClangTidy" />
+      <checker class="codereliability.ClangTidyChecker" id="codereliability.clangtidychecker" name="ClangTidyChecker">
+         <problem id="com.dw.cdt.checkers.codereliability.error" name="Error"
+            defaultEnabled="true" defaultSeverity="Error" messagePattern="{0}"
+            category="codereliability.category"/>
+         <problem id="com.dw.cdt.checkers.codereliability.warning" name="Warning"
+            defaultEnabled="true" defaultSeverity="Warning" messagePattern="{0}"
+            category="codereliability.category"/>
+         <problem id="com.dw.cdt.checkers.codereliability.style" name="Style"
+            defaultEnabled="true" defaultSeverity="Info" messagePattern="{0}"
+            category="codereliability.category"/>
+      </checker>
+   </extension>
+
+</plugin>
