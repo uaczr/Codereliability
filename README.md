@@ -3,8 +3,8 @@ Clang-Tidy as external Codeanalysis Tool in Eclipse-CDT Neon.3
 
 ## Requirements
 
-clang-tidy
-bear
+- clang-tidy
+- bear
 
 ## Usage
 Copy jar file from Codereliability/deploy into your eclipse/Dropins folder.
