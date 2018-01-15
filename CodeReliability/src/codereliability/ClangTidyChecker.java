@@ -26,7 +26,7 @@ public class ClangTidyChecker extends AbstractExternalToolBasedChecker{
 		      IMarkerGenerator.SEVERITY_INFO, "com.dw.cdt.checkers.codereliability.style");
 		}
 	public ClangTidyChecker() {
-		super(new ConfigurationSettings("Clang-Tidy", new File("clang-tidy"), "-checks=readability-*"));
+		super(new ConfigurationSettings("Clang-Tidy", new File("clang-tidy"), "-checks=*"));
 	}
 
 	@Override
